@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@iconify/tailwind;
+
+html {
+    scroll-behavior: smooth;
+}
+
+td > svg {
+    margin: auto;
+    scale: 2;
+    color: #475569;
+}
+td, th {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    font-size: .8rem;
+}
+
+tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+tr:nth-last-child(1) {
+    background: white;
+}
+
+@media (min-width: 768px) {
+    td, th {
+        font-size:1rem
+    }
+    td > svg {
+        scale: 1.5;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+  /* Track */
+    ::-webkit-scrollbar-track {
+    background: none;
+}
+
+  /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #64748b;
+    border-radius: 8px;
+}
+
+  /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}
